@@ -1,0 +1,14 @@
+PagePilot AI
+
+This repository is an independently modified fork of FisherAI:
+https://github.com/fisherdaddy/FisherAI
+
+Upstream project copyright:
+Copyright 2024 Yoshiki Miura
+
+Upstream license:
+Apache License, Version 2.0
+
+This repository retains the upstream license and adds independent modifications
+for GitHub distribution and community testing. It is not the official FisherAI
+release and is not endorsed by the original author.

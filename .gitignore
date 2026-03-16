@@ -1,0 +1,25 @@
+# Environment Variables
+.env
+
+# IDE files
+.idea/
+.vscode/
+.claude/
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Cache
+.cache/
+
+# Local screenshots / staging assets
+public/new_images/
+
+.DS_Store

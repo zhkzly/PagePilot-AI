@@ -1,0 +1,68 @@
+{
+    "manifest_version": 3,
+    "name": "PagePilot AI",
+    "version": "1.2.0",
+    "description": "AI summary, translation, and chat for the web",
+    "icons": {
+      "16": "images/logo_16.png",
+      "32": "images/logo_32.png",
+      "48": "images/logo_48.png",
+      "128": "images/logo_128.png"
+    },
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "action": {
+        "default_title": "PagePilot AI",
+        "default_icon": {
+          "16": "images/logo_16.png",
+          "32": "images/logo_32.png",
+          "48": "images/logo_48.png",
+          "128": "images/logo_128.png"
+        }
+    },
+    "side_panel": {
+      "default_path": "side_panel.html"
+    },
+    "background": {
+      "service_worker": "./background.js"
+    },
+    "permissions": [
+        "storage", 
+        "sidePanel",
+        "tabs",
+        "activeTab",
+        "contextMenus",
+        "clipboardWrite",
+        "webRequest"
+    ],
+    "minimum_chrome_version":"114",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": [
+          "scripts/third/Readability.js", 
+          "scripts/third/youtube-transcript.js", 
+          "scripts/third/marked.min.js", 
+          "scripts/third/katex/auto-render.min.js",
+          "scripts/third/katex/katex.min.js",
+          "scripts/third/pdf.worker.min.js", 
+          "scripts/third/pdf.min.js", 
+          "scripts/constants.js", 
+          "scripts/utils.js", 
+          "scripts/llm.js",
+          "scripts/content.js" ],
+        "run_at": "document_start"
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+        "images/logo_48.png",
+        "scripts/third/pdf.worker.min.js",
+        "scripts/page-interceptor.js"
+      ],
+        "matches": ["<all_urls>"]
+      }
+    ]
+}
