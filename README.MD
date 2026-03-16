@@ -73,7 +73,6 @@ PagePilot AI 是一个基于 [FisherAI](https://github.com/fisherdaddy/FisherAI)
 </div>
 <br/>
 
-
 ## 🚀 快速开始
 
 ### 安装方式
@@ -133,6 +132,7 @@ PagePilot AI 当前集成了两个 Jina 工具：
 ### Ollama 本地模型配置
 
 1. 启动 Ollama 服务（需开启跨域支持）：
+
 ```bash
 OLLAMA_ORIGINS=* ollama serve
 ```
@@ -148,6 +148,7 @@ OLLAMA_ORIGINS=* ollama serve
 ## 📝 更新日志
 
 ### 2026-03-16
+
 - ✨ **增强多轮对话**：支持围绕当前页面内容持续追问，并恢复历史会话继续聊天
 - ✨ **新增会话管理**：支持多会话、新建分组、会话移动、重命名与删除
 - ✨ **新增上下文管理策略**：按需构建发送给模型的上下文，并在长对话时压缩旧回复和工具结果
@@ -157,28 +158,33 @@ OLLAMA_ORIGINS=* ollama serve
 - 🚀 **更新项目展示素材**：README 使用最新界面截图展示当前功能
 
 ### 2025-09-25
+
 - ✨ **新增画图工具** ：Nano Banana
 - ✨ **优化 agent 能力** ：支持多工具调用
 - 🚀 **体验改进**: 使用 Codex CLI 进行代码和界面优化
 - 🚀 **更新至最新模型**：gpt-5、gpt-5-codex、claude-sonnet-4、grok-4-fast、kimi k20905 等等
 
 ### 2025-04-13
+
 - ✨ **支持更多模型供应商**: 支持更多模型供应商，如 OpenAI、Gemini、xAI、OpenRouter、Siliconflow、DeepSeek、Doubao 等。
 - ✨ **支持自定义 Prompt**: 支持自定义 Prompt，支持多种场景的 Prompt 设置。
 - 🚀 **支持浅色模式和黑色模式**
 - 🚀 **体验改进**: 优化快捷翻译展示界面
 
 ### 2025-02-10
+
 - ✨ **新增模型支持**: 集成 DeepSeek-R1、Gemini-2.0-flash 等先进模型。
 - ✨ **公式渲染**: 添加对 LaTeX 公式的渲染支持。
 - 🚀 **Ollama 优化**: 改进 Ollama 本地模型的使用体验。
 
 ### 2024-07-17
+
 - ✨ **工具箱**: 新增工具箱功能，扩展插件能力。
 - ✨ **自定义参数**: 允许用户自定义模型参数（如温度、Top P 等）。
 - ✨ **Ollama 集成**: 初步集成 Ollama，支持本地模型。
 
 ### 2024-05-19
+
 - ✨ **网页翻译**: 新增网页全文翻译功能。
 - ✨ **视频翻译**: 新增对 Bilibili 和 YouTube 视频字幕的翻译功能。
 - ✨ **模型扩展**: 增加对多种主流 AI 模型的支持。
@@ -188,21 +194,13 @@ OLLAMA_ORIGINS=* ollama serve
 - 🚀 **设置页改版**: 重新设计和优化设置页面。
 
 ### 2024-04-17
+
 - ✨ **智能摘要**: 实现一键自动摘要功能。
 - ✨ **自定义 API Key**: 支持用户配置自定义 OpenAI API 密钥。
 - ✨ **多轮对话**: 添加多轮对话功能。
 - ✨ **分享功能**: 新增将摘要结果分享为图片的功能。
 
-
 ## 📜 开源协议
 
 本项目遵循 Apache 2.0 协议。详见 [LICENSE](LICENSE) 文件。
 如需查看 fork 来源声明与第三方组件说明，请同时阅读 [NOTICE](NOTICE)、[ATTRIBUTION.md](ATTRIBUTION.md) 和 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
-
-## 🤝 贡献指南
-
-欢迎提交 Issue 和 Pull Request！
-
-## ⭐ 支持项目
-
-如果这个项目对您有帮助，请考虑给它一个 Star！
